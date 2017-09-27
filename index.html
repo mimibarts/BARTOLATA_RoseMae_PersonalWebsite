@@ -32,12 +32,38 @@ p {
 	font-family: Niagara Engraved;
 	
 	}
-div.relative {
+/*div.relative {
 	font-size: 130%;
     text-align: left;
 	color: black;
 	font-family: Century Gothic;
-} 
+} */
+div {
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    -webkit-animation: myfirst 5s infinite;
+    -webkit-animation-direction: alternate;
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes myfirst {
+    20%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+
+}
+@keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
 
 </style>
 </head>
@@ -47,20 +73,20 @@ div.relative {
 
 <br /><br />
 
-<button onclick="signup()">about</button><br /><br />
+<button onclick="about()">about</button><br /><br />
 <button onclick="login()">achievement</button>
 <center>
-	
+	<div></div>
 <p>ROSE MAE BARTOLATA</p>
 	
 </center>
 <br />
-<div class="relative">dont hate.</div>
+<!-- <div class="relative">dont hate.</div>
 <br /><br /> 
-<div class="relative">i am me and nothing more.</div>
+<div class="relative">i am me and nothing more.</div> -->
 <script>
-function signup() {
-    window.location = "signup2.html";
+function about() {
+    window.location = "about.html";
 }
 </script>
 </body>
