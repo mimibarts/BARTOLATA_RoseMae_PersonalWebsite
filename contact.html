@@ -1,70 +1,122 @@
-
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Contact</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title></title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
 
 
 body {
-	background-image: url("13.jpg");
-	background-size: 90%;
-	background-position: relative;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	font-size: 80%;
-	font-family: "Courier New", Courier, monospace;
-	letter-spacing: 0.15em; 
+    background-image: url("13.jpg");
+    background-size: 90%;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-size: 80%;
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 0.15em; 
 }
 #box {
-	max-width: 750px;
-	min-width: 720px;
-	margin: 20px;
-	padding: 10px;
-	opacity: 0.7;
-	background-size: 100%;
+    max-width: 750px;
+    min-width: 720px;
+    margin: 20px;
+    padding: 10px;
+    opacity: 0.7;
+    background-size: 100%;
 }
 #rmb {
-	width: 300px;
-	margin: 5px auto 15px auto;
+    width: 300px;
+    margin: 5px auto 15px auto;
 }
 ul {
-	width: 570px;
-	padding: 15px;
-	margin: 0px auto 0px auto;
-	border-top: 2px solid #000;
-	border-bottom: 1px solid #000;
-	text-align: left;
+    width: 500px;
+    padding: 15px;
+    margin: 0px auto 0px auto;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: left;
 }
 p {
-	text-align: center;
-	color: black;
-	width: 600px; 
-	margin: 20px auto 20px auto; 
-	font-weight: normal;
+    text-align: center;
+    color: black;
+    width: 600px; 
+    margin: 20px auto 20px auto; 
+    font-weight: normal;
 }
 div.relative {
-	font-size: 120%;
+    font-size: 120%;
     text-align: left;
-	color: black;
-	font-family: Courier New;
+    color: black;
+    font-family: Courier New;
 } 
 
+ #maincontainer {
+    width:1000px;
+    height: 100%;
+    display:inline-block;
+}
+#leftcolumn {
+    float:left;
+    width: 50px;
+    height:20px;
+    background: white;
+}
+#contentwrapper {
+    float:right;
+    width:50px;
+    height: 20px;
+    background-color: white;
+}
+input[type=name], select ,input[type=tell], input[type=email], input[type=message] {
+  margin: 5px;
+  padding: 0 10px;
+  height: 35px;
+  width: 300px;
+  color: white; 
+  background: #4d4d4d;
+  border-width: 2px;
+  border-style: none;
+  border-radius: 30px;
+  margin:10px 0;
+  font-family: Century Gothic;
+}
 
-  </style>
-  </head>
-  <body>
+
+input[type=submit] {
+
+    color: white;
+    background-color: #333333;
+    padding-top: 8px;
+    width: 45%;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    margin-top: -8px;
+    font-family: Century Gothic;
+}
+input[type=submit]:hover {
+    background-color: #737373; 
+}
+
+</style>
+</body>
+
+
+<div id="maincontainer">
+    <div id="leftcolumn">
+
 
 <div id="box">
 <div id="rmb">
 </div>
 <ul id="navigation">
 <center>
-	<img src="tri.jpg"  width="400" height="130"/>
+    <img src="tri.jpg"  width="400" height="130"/>
 </center>
-<div class="relative">Contact</div>
+<div class="relative">Get in Touch</div>
 <br>
 
 <span class="fa-stack fa-lg">
@@ -97,6 +149,20 @@ rosemaebartolata2@gmail.com<br>
 </span>
 mimibartolata11<br>
 </ul>
+</div>
 
-	</body>
+    <div id="contentwrapper">
+    <img src="person.ico" width="50" height="70">
+<h3>sign up form</h3>
+<hr>
+    <form action="<?php $_PHP_SELF; ?>" method="POST">
+    <input type="name" name="name" value="" placeholder="YOUR NAME*">
+    <input type="email" name="email" value="" placeholder="EMAIL ADDRESS*"><br />
+    <input type="tell" name="tell" value="" placeholder="TELEPHONE NUMBER"><br />
+    <input type="massage" name="message" value="" placeholder="YOUR MESSAGE"><br /><br><br>
+
+    <input type="submit" name="submit" value="submit">
+</form>
+</div>
+</div>
 </html>
