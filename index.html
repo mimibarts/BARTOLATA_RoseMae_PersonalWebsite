@@ -2,10 +2,11 @@
 <title>Where i belong.</title>
 <style>
 body {
-    background-image: url('mimi.jpg');
+    background-image: url('bg1.gif');
     min-height: 100%;
+    opacity: 0.9;
     background-position: relative;
-    background-size: 900px 800px;
+    background-size: 1400px 700px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -32,38 +33,16 @@ p {
 	font-family: Niagara Engraved;
 	
 	}
-/*div.relative {
+div.relative {
 	font-size: 130%;
     text-align: left;
 	color: black;
 	font-family: Century Gothic;
-} */
-/*div {
-    width: 200px;
-    height: 200px;
-    background: red;
-    position: absolute;
-    -webkit-animation: myfirst 5s infinite;
-    -webkit-animation-direction: alternate;
-    animation: myfirst 5s infinite;
-    animation-direction: alternate;
-}
+} 
 
-@-webkit-keyframes myfirst {
-    20%   {background: red; left: 0px; top: 0px;}
-    25%  {background: yellow; left: 200px; top: 0px;}
-    50%  {background: blue; left: 200px; top: 200px;}
-    75%  {background: green; left: 0px; top: 200px;}
-    100% {background: red; left: 0px; top: 0px;}
-
+img {
+    border-radius: 90%;
 }
-@keyframes myfirst {
-    0%   {background: red; left: 0px; top: 0px;}
-    25%  {background: yellow; left: 200px; top: 0px;}
-    50%  {background: blue; left: 200px; top: 200px;}
-    75%  {background: green; left: 0px; top: 200px;}
-    100% {background: red; left: 0px; top: 0px;}
-}*/
 
 </style>
 </head>
@@ -74,22 +53,28 @@ p {
 <br /><br />
 
 <button onclick="about()">about</button><br /><br />
-<button onclick="login()">achievement</button>
+<button onclick="achievement()">achievement</button>
 <center>
-	<div></div>
+
+<img src="mim.png" width="350" height="250">
+
 <p>ROSE MAE BARTOLATA</p>
+
 	
 </center>
 <br />
-<!-- <div class="relative">dont hate.</div>
+<div class="relative">"love is given priority." -Mt. 5:21</div>
 <br /><br /> 
-<div class="relative">i am me and nothing more.</div> -->
+<div class="relative">i am me and nothing more.</div>
 <script>
 function about() {
     window.location = "about.html";
 }
+function achievement() {
+	window.location = "achievement.html";
+}
 </script>
-</body>
+</body> 
 </html>
 
 
