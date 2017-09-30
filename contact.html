@@ -1,76 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+  <title>Contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
 <style>
 
-
 body {
-    background-image: url("13.jpg");
-    background-size: 90%;
-    background-position: relative;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    font-size: 80%;
-    font-family: "Courier New", Courier, monospace;
-    letter-spacing: 0.15em; 
+  background-image: url("mimi.jpg");
+  background-size: 90%;
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-size: 80%;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.15em; 
 }
-#box {
-    max-width: 750px;
-    min-width: 720px;
-    margin: 20px;
-    padding: 10px;
-    opacity: 0.7;
-    background-size: 100%;
-}
-#rmb {
-    width: 300px;
-    margin: 5px auto 15px auto;
-}
-ul {
-    width: 500px;
-    padding: 15px;
-    margin: 0px auto 0px auto;
-    border-top: 2px solid #000;
-    border-bottom: 1px solid #000;
-    text-align: left;
-}
-p {
-    text-align: center;
-    color: black;
-    width: 600px; 
-    margin: 20px auto 20px auto; 
-    font-weight: normal;
-}
-div.relative {
-    font-size: 120%;
-    text-align: left;
-    color: black;
-    font-family: Courier New;
-} 
 
- #maincontainer {
-    width:1000px;
-    height: 100%;
-    display:inline-block;
-}
-#leftcolumn {
-    float:left;
-    width: 50px;
-    height:20px;
-    background: white;
-}
-#contentwrapper {
-    float:right;
-    width:50px;
-    height: 20px;
-    background-color: white;
-}
-input[type=name], select ,input[type=tell], input[type=email], input[type=message] {
+input[type=name], select ,input[type=tell], input[type=email] {
   margin: 5px;
   padding: 0 10px;
   height: 35px;
@@ -83,7 +31,16 @@ input[type=name], select ,input[type=tell], input[type=email], input[type=messag
   margin:10px 0;
   font-family: Century Gothic;
 }
-
+input[type=message] {
+	padding: 0 10px;
+  height: 50px;
+  width: 300px;
+  color: black; 
+  border-width: 2px;
+  border-style: none;
+  margin:10px 0;
+  font-family: Century Gothic;
+}
 
 input[type=submit] {
 
@@ -101,24 +58,65 @@ input[type=submit]:hover {
     background-color: #737373; 
 }
 
+div.container {
+  margin: 5px auto 15px auto;
+    width: 60%;
+}
+
+header, footer {
+    padding: 1em;
+    color: black;
+    background-color: white;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 300px;
+    margin: 0;
+    padding: 3em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+ 	max-width: 350px;
+    margin-left: 170px;
+    padding: 3em;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
 </style>
-</body>
+</head>
+<body>
 
 
-<div id="maincontainer">
-    <div id="leftcolumn">
 
+<div class="container">
 
-<div id="box">
-<div id="rmb">
-</div>
-<ul id="navigation">
-<center>
-    <img src="tri.jpg"  width="400" height="130"/>
-</center>
-<div class="relative">Get in Touch</div>
-<br>
+<header>
+   <h1>Contact Me!</h1>
+</header>
 
+<nav>
+	 <h3>Keep in Touch</h3>
+	 <hr>
+    <ul>
 <span class="fa-stack fa-lg">
   <i class="fa fa-envelope" aria-hidden="true" style="font-size:30px;"></i>
 </span>
@@ -149,20 +147,24 @@ rosemaebartolata2@gmail.com<br>
 </span>
 mimibartolata11<br>
 </ul>
-</div>
+</nav>
 
-    <div id="contentwrapper">
-    <img src="person.ico" width="50" height="70">
-<h3>sign up form</h3>
+
+<article>
+
+    <h3>Send Message</h3>
 <hr>
     <form action="<?php $_PHP_SELF; ?>" method="POST">
     <input type="name" name="name" value="" placeholder="YOUR NAME*">
     <input type="email" name="email" value="" placeholder="EMAIL ADDRESS*"><br />
     <input type="tell" name="tell" value="" placeholder="TELEPHONE NUMBER"><br />
-    <input type="massage" name="message" value="" placeholder="YOUR MESSAGE"><br /><br><br>
+    <input type="message" name="message" value="" placeholder="YOUR MESSAGE"><br /><br><br>
 
     <input type="submit" name="submit" value="submit">
 </form>
+</article>
+  
+<footer><img src="tri.jpg"  width="400" height="130"/></footer>
 </div>
-</div>
+</body>
 </html>
