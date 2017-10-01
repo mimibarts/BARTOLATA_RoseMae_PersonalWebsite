@@ -3,7 +3,7 @@
 <style>
 body {
 
-    background-image: url('images/trav.gif');
+    background-image: url('images/black.jpg');
     min-height: 100%;
    /* opacity: 0.9;*/
     padding: 25px 35px;
@@ -17,29 +17,6 @@ body {
 	 
 }
 
-ul a {
-    list-style-type: none;
-/*    margin: 1px;
-    padding: 1px;*/
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: left;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-}
 button {
     background-color: #000000;
     color: white;
@@ -67,24 +44,14 @@ div.relative {
 	font-family: Century Gothic;
 } 
 
-/*img {
-    border-radius: 90%;
-}*/
-
 </style>
 </head>
 <body>
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="achievement.html">Achievements</a></li>
-  <li><a href="contact.html">Contacts</a></li>
-</ul>
-
 
 <button onclick="about()">about</button><br /><br />
-<button onclick="achievement()">achievement</button><br /><br />
-<button onclick="contact()">contact</button>
+<button onclick="achievement()">achievements</button><br /><br />
+<button onclick="contact()">contacts</button><br /><br />
+<button onclick="gallery()">gallery</button>
 
 
 <center>
@@ -104,6 +71,9 @@ function achievement() {
 }
 function contact() {
 	window.location = "contact.html";
+}
+function gallery() {
+	window.location = "gallery.html";
 }
 </script>
 </body> 
