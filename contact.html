@@ -31,13 +31,16 @@ input[type=name], select ,input[type=tell], input[type=email] {
   margin:10px 0;
   font-family: Century Gothic;
 }
-input[type=message] {
+textarea {
 	padding: 0 10px;
-  height: 50px;
+  height: 100px;
   width: 300px;
-  color: black; 
+  background: #4d4d4d;
+  color: white; 
   border-width: 2px;
   border-style: none;
+  border: 12px;
+  border-radius: 12px;
   margin:10px 0;
   font-family: Century Gothic;
 }
@@ -73,7 +76,7 @@ header, footer {
 
 nav {
     float: left;
-    max-width: 300px;
+    max-width: 400px;
     margin: 0;
     padding: 3em;
 }
@@ -158,9 +161,8 @@ mimibartolata11<br>
     <form action="<?php $_PHP_SELF; ?>" method="POST">
     <input type="name" name="name" value="" placeholder="YOUR NAME*">
     <input type="email" name="email" value="" placeholder="EMAIL ADDRESS*"><br />
-    <input type="tell" name="tell" value="" placeholder="TELEPHONE NUMBER"><br />
-    <input type="message" name="message" value="" placeholder="YOUR MESSAGE"><br /><br><br>
-
+    <input type="tell" name="tell" value="" placeholder="TELEPHONE NUMBER*"><br />
+    <textarea rows="4" cols="50" name="comment" form="userform" placeholder="ENTER YOUR MESSAGE HERE.."></textarea><br><br><br>
     <input type="submit" name="submit" value="submit">
 </form>
 </article>

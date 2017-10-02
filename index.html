@@ -44,25 +44,42 @@ div.relative {
 	font-family: Century Gothic;
 } 
 
+.left {
+	margin: 22px 0 15px 30;
+}
+
+.logo {
+	margin: 22px 0 15px 800;
+}
+
 </style>
 </head>
 <body>
 
+<div >
+<img src="images/edit.gif" class="logo" width="300" height="200">
+</div>
+
+<div class="left">
 <button onclick="about()">about</button><br /><br />
 <button onclick="achievement()">achievements</button><br /><br />
-<button onclick="contact()">contacts</button><br /><br />
-<button onclick="gallery()">gallery</button>
+<button onclick="contact()" >contacts</button><br /><br />
+<button onclick="gallery()" >gallery</button>
+</div>
+
 
 
 <center>
-<img src="images/edit.gif" width="300" height="200">
-</center>
+<!-- <img src="images/edit.gif" width="300" height="200">
+ --></center>
 
 	<br /><br /><br /><br /><br />
 <div class="relative">"I have died, but Christ lives in me.<br>And I now live by faith in the Son of God,<br>who loved me and gave his life for me." -Galatians 2:20</div>
 <br />
 <div class="relative">i am me and nothing more.</div>
 <script>
+	
+
 function about() {
     window.location = "about.html";
 }
