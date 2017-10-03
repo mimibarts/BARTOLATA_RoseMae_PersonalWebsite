@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Contact</title>
+  <title>Contacts</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
@@ -103,7 +103,6 @@ article {
 
 
 
-
 </style>
 </head>
 <body>
@@ -157,10 +156,11 @@ mimibartolata11<br>
 <article>
 
     <h3>Send Message</h3>
+
 <hr>
     <form action="<?php $_PHP_SELF; ?>" method="POST">
-    <input type="name" name="name" value="" placeholder="YOUR NAME*">
-    <input type="email" name="email" value="" placeholder="EMAIL ADDRESS*"><br />
+    <input type="name" name="name" value="" placeholder="YOUR NAME*" required="required">
+    <input type="email" name="email" value="" placeholder="EMAIL ADDRESS*" required="required"><br />
     <input type="tell" name="tell" value="" placeholder="TELEPHONE NUMBER*"><br />
     <textarea rows="4" cols="50" name="comment" form="userform" placeholder="ENTER YOUR MESSAGE HERE.."></textarea><br><br><br>
     <input type="submit" name="submit" value="submit">
