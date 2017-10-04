@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Boxes</title>  
+   <title>Myself</title>  
 <style type="text/css">   
 body {    
   font-size: 80%;    
   font-family: "Courier New", Courier, monospace;
   letter-spacing: 0.15em;     
-/*  background-color: #efefef;*/
+    margin: 0;
+  padding: 0;
+
 }   
 #page {    
   max-width: 1000px;    
   min-width: 1000px;    
   margin: 10px auto 10px auto;    
   padding: 20px;    
-/*  border: 4px double #000;   */
+
   background-color: #ffffff;
 }   
 #logo {    
@@ -32,36 +34,57 @@ ul {
  li {    
   display: inline;    
   margin: 0px 3px;
-}   p {    
+}
+   p {    
   text-align: center;    
   width: 600px;     
   margin: 10px auto 10px auto;     
   font-weight: normal;
 }
-a {    
-color: #000000;    
-text-transform: uppercase;    
-text-decoration: none;    
-padding: 6px 18px 6px 18px;
-}   
-a:hover, a.on {    
-color: #cc3333;    
-background-color: #ffffff;
-}  
-div.gallery img {
-    width: 300px;
-    height: 350px;
-}
-div.gallery {
-    float: left;
-    width: 200px;
-     padding: 30px 50px 40px 60px;
-}
+
+#photos {
+   line-height: 0;
+   
+   -webkit-column-count: 5;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    5;
+   -moz-column-gap:      0px;
+   column-count:         5;
+   column-gap:           0px;
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
+#photos img {
+  width: 100% !important;
+  height: auto !important;
 }
+
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
 </style> 
 </head> 
 <body>  
@@ -75,7 +98,40 @@ div.gallery:hover {
       <li><a href="friends.html">Friends</a></li>    
  
     </ul>   
-  <p>  
+
+
+<p>  
+
+<section id="photos">
+  <img src="images/myself/m1.jpg" alt="Cute cat">
+  <img src="images/myself/m2.jpg" alt="Serious cat">
+  <img src="images/myself/m3.jpg" alt="Cute cat">
+  <img src="images/myself/m4.jpg" alt="Serious cat">
+  <img src="images/myself/m5.jpg" alt="Cute cat">
+  <img src="images/myself/m6.jpg" alt="Serious cat">
+  <img src="images/myself/m7.jpg" alt="Cute cat">
+  <img src="images/myself/m8.jpg" alt="Serious cat">
+  <img src="images/myself/m9.jpg" alt="Cute cat">
+  <img src="images/myself/m10.jpg" alt="Serious cat">
+  <img src="images/myself/m11.png" alt="Serious cat">
+  <img src="images/myself/m12.jpg" alt="Cute cat">
+  <img src="images/myself/m13.jpg" alt="Serious cat">
+  <img src="images/myself/m14.jpg" alt="Serious cat">
+  <img src="images/myself/m16.jpg" alt="Cute cat"></section>
+
+
+
+
+
+   </p>
+
+
+
+
+
+
+
+ <!--  <p>  
 <div class="gallery">
   <a target="_blank" href="images/myself/m1.jpg">
     <img src="images/myself/m1.jpg" alt="Trolltunga Norway" width="600" height="400">
@@ -156,7 +212,7 @@ div.gallery:hover {
 </div>
 
 
-   </p>
+   </p> -->
     <p>    "To establish true self-esteem we must concentrate on our successes and forget about the failures and the negatives in our lives."
 - Denis Waitley   
   </p>  
