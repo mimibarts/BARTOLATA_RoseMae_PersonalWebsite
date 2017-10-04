@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Boxes</title>  
+   <title>Friends</title>  
 <style type="text/css">   
 body {    
   font-size: 80%;    
   font-family: "Courier New", Courier, monospace;
   letter-spacing: 0.15em;     
-/*  background-color: #efefef;*/
+    margin: 0;
+  padding: 0;
+
 }   
 #page {    
   max-width: 1000px;    
   min-width: 1000px;    
   margin: 10px auto 10px auto;    
   padding: 20px;    
-/*  border: 4px double #000;   */
+
   background-color: #ffffff;
 }   
 #logo {    
@@ -32,37 +34,57 @@ ul {
  li {    
   display: inline;    
   margin: 0px 3px;
-}   p {    
+}
+   p {    
   text-align: center;    
   width: 600px;     
   margin: 10px auto 10px auto;     
   font-weight: normal;
 }
-a {    
-color: #000000;    
-text-transform: uppercase;    
-text-decoration: none;    
-padding: 6px 18px 6px 18px;
-}   
-a:hover, a.on {    
-color: #cc3333;    
-background-color: #ffffff;
-}  
-div.gallery img {
-    width: 300px;
-    height: 350px;
-}
-div.gallery {
-/*    margin: 1px;
-*//*    border: 1px solid #ccc;
-*/    float: left;
-    width: 200px;
-     padding: 40px 60px 40px 60px;
-}
+
+#photos {
+   line-height: 0;
+   
+   -webkit-column-count: 5;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    5;
+   -moz-column-gap:      0px;
+   column-count:         5;
+   column-gap:           0px;
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
+#photos img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
 }
 </style> 
 </head> 
@@ -77,74 +99,30 @@ div.gallery:hover {
       <li><a href="family.html">Family</a></li>   
             <li><a href="#" class="on">Friends</a></li>     
  
-    </ul>   
-  <p>  
-<div class="gallery">
-  <a target="_blank" href="images/friends/ff1.jpg">
-    <img src="images/friends/ff1.jpg" alt="Friends" width="600" height="400">
-  </a>
-</div>
+    </ul>  
 
-<div class="gallery">
-  <a target="_blank" href="images/friends/ff2.jpg">
-    <img src="images/friends/ff2.jpg" alt="Friends" width="600" height="400">
-  </a>
-</div>
+<p>  
 
-<div class="gallery">
-  <a target="_blank" href="images/friends/ff3.jpg">
-    <img src="images/friends/ff3.jpg" alt="Friends" width="600" height="400">
-  </a>
-</div>
+<section id="photos">
+  <img src="images/friends/ff1.jpg" alt="Cute cat">
+  <img src="images/friends/ff2.jpg" alt="Serious cat">
+  <img src="images/friends/ff3.jpg" alt="Cute cat">
+  <img src="images/friends/ff4.jpg" alt="Serious cat">
+  <img src="images/friends/ff5.jpg" alt="Cute cat">
+  <img src="images/friends/ff6.jpg" alt="Serious cat">
+  <img src="images/friends/ff7.jpg" alt="Cute cat">
+  <img src="images/friends/ff8.jpg" alt="Serious cat">
+  <img src="images/friends/ff9.jpg" alt="Cute cat">
+  <img src="images/friends/ff10.jpg" alt="Serious cat">
+  <img src="images/friends/ff11.jpg" alt="Serious cat">
+  <img src="images/friends/ff12.jpg" alt="Cute cat"></section>
 
-<div class="gallery">
-  <a target="_blank" href="images/friends/ff4.jpg">
-    <img src="images/friends/ff4.jpg" alt="Friends" width="600" height="400">
-  </a>
-</div>
-<div class="gallery">
-  <a target="_blank" href="images/friends/ff5.jpg">
-    <img src="images/friends/ff5.jpg" alt="Friends" width="600" height="400">
-  </a>
-</div>
-<div class="gallery">
-  <a target="_blank" href="images/friends/ff6.jpg">
-    <img src="images/friends/ff6.jpg" alt="Friends" width="600" height="400">
-  </a>
-</div>
-<div class="gallery">
-  <a target="_blank" href="images/friends/ff7.jpg">
-    <img src="images/friends/ff7.jpg" alt="Friends" width="600" height="400">
-  </a>
-</div>
-<div class="gallery">
-  <a target="_blank" href="images/friends/ff8.jpg">
-    <img src="images/friends/ff8.jpg" alt="Friends" width="600" height="400">
-  </a>
-</div>
-<div class="gallery">
-  <a target="_blank" href="images/friends/ff9.jpg">
-    <img src="images/friends/ff9.jpg" alt="Friends" width="600" height="400">
-  </a>
-</div>
-<div class="gallery">
-  <a target="_blank" href="images/friends/ff10.jpg">
-    <img src="images/friends/ff10.jpg" alt="Friends" width="600" height="400">
-  </a>
-</div>
-<div class="gallery">
-  <a target="_blank" href="images/friends/ff11.jpg">
-    <img src="images/friends/ff11.jpg" alt="Friends" width="600" height="400">
-  </a>
-</div>
-<div class="gallery">
-  <a target="_blank" href="images/friends/ff12.jpg">
-    <img src="images/friends/ff12.jpg" alt="Friends" width="600" height="400">
-  </a>
-</div>
+
+
 
 
    </p>
+
     <p>    "Friendship marks a life even more deeply than love. Love risks degenerating into obsession, friendship is never anything but sharing."  - Elie Wiesel
   </p>  
 </div> 
