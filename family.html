@@ -7,6 +7,8 @@ body {
   font-size: 80%;    
   font-family: "Courier New", Courier, monospace;
   letter-spacing: 0.15em;     
+    margin: 0;
+  padding: 0;
 /*  background-color: #efefef;*/
 }   
 #page {    
@@ -32,13 +34,69 @@ ul {
  li {    
   display: inline;    
   margin: 0px 3px;
-}   p {    
+}
+   p {    
   text-align: center;    
   width: 600px;     
   margin: 10px auto 10px auto;     
   font-weight: normal;
 }
-a {    
+
+#photos {
+   line-height: 0;
+   
+   -webkit-column-count: 5;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    5;
+   -moz-column-gap:      0px;
+   column-count:         5;
+   column-gap:           0px;
+}
+
+#photos img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*a {    
 color: #000000;    
 text-transform: uppercase;    
 text-decoration: none;    
@@ -52,18 +110,17 @@ div.gallery img {
     width: 300px;
     height: 350px;
 }
-div.gallery {
+div.gallery {*/
 /*    margin: 1px;
 *//*    border: 1px solid #ccc;
-*/    float: left;
+*/    /*float: left;
     width: 200px;
      padding: 40px 60px 40px 60px;
-}
-}
+}*/
 
-div.gallery:hover {
+/*div.gallery:hover {
     border: 1px solid #777;
-}
+}*/
 </style> 
 </head> 
 <body>  
@@ -76,8 +133,8 @@ div.gallery:hover {
       <li><a href="#" class="on">Family</a></li>         
       <li><a href="friends.html">Friends</a></li>    
     </ul>   
-  <p>  
-<div class="gallery">
+<!--   <p>   -->
+<!-- <div class="gallery">
   <a target="_blank" href="images/friends/f1.jpg">
     <img src="images/family/f1.jpg" alt="Trolltunga Norway" width="600" height="400">
   </a>
@@ -154,10 +211,31 @@ div.gallery:hover {
   <a target="_blank" href="images/family/f15.jpg">
     <img src="images/family/f15.jpg" alt="Family" width="600" height="400">
   </a>
-</div>
+</div> -->
 
 
-   </p>
+<section id="photos">
+  <img src="images/family/f1.jpg" alt="Cute cat">
+  <img src="images/family/f2.jpg" alt="Serious cat">
+  <img src="images/family/f3.jpg" alt="Cute cat">
+  <img src="images/family/f4.jpg" alt="Serious cat">
+  <img src="images/family/f5.jpg" alt="Cute cat">
+  <img src="images/family/f6.jpg" alt="Serious cat">
+  <img src="images/family/f7.jpg" alt="Cute cat">
+  <img src="images/family/f8.jpg" alt="Serious cat">
+  <img src="images/family/f9.jpg" alt="Cute cat">
+  <img src="images/family/f10.jpg" alt="Serious cat">
+  <img src="images/family/f11.jpg" alt="Serious cat">
+  <img src="images/family/f12.jpg" alt="Cute cat">
+  <img src="images/family/f13.jpg" alt="Serious cat">
+  <img src="images/family/f14.jpg" alt="Cute cat">
+  <img src="images/family/f15.jpg" alt="Serious cat"></section>
+
+
+
+
+<!-- 
+   </p> -->
     <p>    You don't choose your family. They are God's gift to you, as you are to them.   
   </p>  
 </div> 
